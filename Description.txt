@@ -1,1 +1,4 @@
-First version of SimUDuck.
+Now I needed to add flyability to Ducks. I add this method to my base class.
+all his children inherit it. But there is a problem. Rubber ducks now fly to! 
+But this is not what i wanted! Oops!
+Also i realize that I had a wooden duck that is not suppoed to quack. :(

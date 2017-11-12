@@ -13,5 +13,9 @@ namespace Strategy.Ducks
         {
             Console.WriteLine("I swim");
         }
+        public void Fly() 
+        {
+            Console.WriteLine("Wow! I fly!");
+        }
     }
 }

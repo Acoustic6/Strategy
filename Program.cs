@@ -7,12 +7,11 @@ namespace Strategy
     {
         static void Main(string[] args)
         {
-            var mallard = new MallardDuck();
-            var readhead = new ReadheadDuck();
-            mallard.Display();
-            readhead.Display();
-            mallard.Quack();
-            readhead.Swim();
+            var rubber = new RubberDuck();
+            rubber.Fly();//not expected behaviour!
+
+            var wooden = new WoodenDuck();
+            wooden.Quack();//not expected behaviour!
         }
     }
 }
