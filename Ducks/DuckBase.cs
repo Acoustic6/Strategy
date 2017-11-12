@@ -5,7 +5,7 @@ namespace Strategy.Ducks
     public abstract class DuckBase
     {
         public abstract void Display();
-        public void Quack() 
+        public virtual void Quack() 
         {
             Console.WriteLine("Quack!");
         }  
@@ -13,7 +13,7 @@ namespace Strategy.Ducks
         {
             Console.WriteLine("I swim");
         }
-        public void Fly() 
+        public virtual void Fly() 
         {
             Console.WriteLine("Wow! I fly!");
         }

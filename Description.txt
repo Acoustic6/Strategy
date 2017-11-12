@@ -1,4 +1,2 @@
-Now I needed to add flyability to Ducks. I add this method to my base class.
-all his children inherit it. But there is a problem. Rubber ducks now fly to! 
-But this is not what i wanted! Oops!
-Also i realize that I had a wooden duck that is not suppoed to quack. :(
+Well..I can always override my methods if I want they not to do anything!
+But wait. If new duck classes will appear I will have to go to each one and override lots of methods. Kinda not funny.

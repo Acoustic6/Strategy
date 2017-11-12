@@ -8,5 +8,10 @@ namespace Strategy.Ducks
         {
             Console.WriteLine("I'm a Rubber Duck, Greetings!");
         }
+
+        public override void Fly() 
+        {
+            
+        }
     }
 }

@@ -8,5 +8,15 @@ namespace Strategy.Ducks
         {
             Console.WriteLine("I'm a Wooden Duck, Greetings!");
         }
+
+        public override void Fly()
+        {
+
+        }
+
+        public override void Quack()
+        {
+            
+        }
     }
 }
