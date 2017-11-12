@@ -1,4 +1,5 @@
 ﻿using System;
+using Strategy.Ducks;
 
 namespace Strategy
 {
@@ -6,7 +7,12 @@ namespace Strategy
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var mallard = new MallardDuck();
+            var readhead = new ReadheadDuck();
+            mallard.Display();
+            readhead.Display();
+            mallard.Quack();
+            readhead.Swim();
         }
     }
 }
