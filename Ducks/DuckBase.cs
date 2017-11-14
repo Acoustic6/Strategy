@@ -1,13 +1,19 @@
 using System;
+using Strategy.Behaviour.Quack;
+using Strategy.Behaviour.Fly;
 
 namespace Strategy.Ducks
 {
     public abstract class DuckBase
     {
+        protected IFlyBehaviour flyBehaviour;
+        protected IQuackBehaviour quackBehaviour;
+
         public abstract void Display();
+
         public virtual void Quack() 
         {
-            Console.WriteLine("Quack!");
+            quackBehaviour.Quack();
         }  
         public void Swim() 
         {
@@ -15,7 +21,15 @@ namespace Strategy.Ducks
         }
         public virtual void Fly() 
         {
-            Console.WriteLine("Wow! I fly!");
+            flyBehaviour.Fly();
+        }
+
+        public void setFlyBehaviour(IFlyBehaviour newFlyBehaviour) {
+            flyBehaviour = newFlyBehaviour;
+        }
+
+        public void setQuackBehaviour(IQuackBehaviour newQuackBehaviour) {
+            quackBehaviour = newQuackBehaviour;
         }
     }
 }

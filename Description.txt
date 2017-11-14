@@ -1,2 +1,3 @@
-Well..I can always override my methods if I want they not to do anything!
-But wait. If new duck classes will appear I will have to go to each one and override lots of methods. Kinda not funny.
+What I need to do is to separate changing parts from my Duck class. 
+This means that instead of inhariting I am doing composition.
+What always changes in my program is behaviour for my duck classes.
